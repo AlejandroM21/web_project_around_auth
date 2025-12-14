@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 export default function Popup(props) {
-  const { title, children, onClose } = props;
+  const { title, children, onClose, isOpen } = props;
 
   // Cerrar con Escape
   useEffect(() => {
@@ -14,7 +14,7 @@ export default function Popup(props) {
     return () => {
       document.removeEventListener("keydown", handleEsc); // limpiar al desmontar
     };
-  }, [onClose]);
+  }, [isOpen, onClose]);
 
   // Función que detecta clic en el overlay
   const handleOverlayClick = (e) => {
@@ -25,7 +25,10 @@ export default function Popup(props) {
   };
 
   return (
-    <div className="popup popup_opened" onClick={handleOverlayClick}>
+    <div
+      className={`popup ${isOpen ? "popup_opened" : ""}`}
+      onClick={handleOverlayClick}
+    >
       <div className="popup__container">
         {/* <!-- Botón de cierre --> */}
         <button
