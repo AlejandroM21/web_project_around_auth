@@ -7,6 +7,7 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .header__logo {
@@ -41,10 +42,31 @@
   padding: 0;
 }
 
-.user-email {
-  display: block;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
-  color: #fff;
+.header__burger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.header__burger span {
+  width: 24px;
+  height: 3px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.header__burger-open span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.header__burger-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__burger-open span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
 }

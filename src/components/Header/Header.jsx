@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import logo_header from "../../../public/logo_header.png";
 
 export default function Header({
@@ -7,6 +8,8 @@ export default function Header({
   onSignOut,
   currentPath,
 }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="header">
       <img
@@ -15,7 +18,18 @@ export default function Header({
         alt="Logo Alrededor de EE.UU."
       />
 
-      <ul className="header__nav">
+      {/* Botón hamburguesa */}
+      <button
+        className={`header__burger ${menuOpen ? "header__burger-open" : ""}`}
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Menú"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul className={`header__nav ${menuOpen ? "header__nav-open" : ""}`}>
         {isLoggedIn && (
           <>
             <li className="header-email">

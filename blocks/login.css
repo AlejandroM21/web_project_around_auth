@@ -1,4 +1,6 @@
 .login {
+  max-width: 600px;
+  margin: 0 auto;
   background-color: #000;
   color: #fff;
   display: flex;
@@ -9,6 +11,7 @@
   font-size: 24px;
   line-height: 100%;
   text-align: center;
+  padding: 16px;
 }
 
 .login__welcome {

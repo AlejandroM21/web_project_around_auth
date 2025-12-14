@@ -8,6 +8,18 @@
   display: flex;
 }
 
+.popup__container {
+  background-color: #ffffff;
+  max-width: 430px;
+  width: 100%;
+  box-shadow: 0px 0px 25px 0px #00000026;
+  border-radius: 10px;
+  padding: 34px 37px 37px;
+  position: relative;
+  z-index: 101;
+  margin: 0 10px;
+}
+
 .popup__overlay {
   background-color: #ffffff;
   max-width: 430px;

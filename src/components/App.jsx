@@ -73,7 +73,7 @@ function App() {
     }
 
     // Llama a la función authorize del módulo auth con el nombre de usuario y la contraseña
-    auth
+    return auth
       .authorize(email, password) // Pasamos 'email' como el 'identifier'
       .then((data) => {
         // Si la respuesta contiene un token, el inicio de sesión fue exitoso
@@ -86,6 +86,7 @@ function App() {
           navigate(redirectPath); // redirige al usuario a la ruta original o a "/" despues del inicio de sesion
           console.log("Inicio de sesión exitoso", data);
         }
+        return data;
       })
       .catch(() => {
         setTooltipSuccess(false);

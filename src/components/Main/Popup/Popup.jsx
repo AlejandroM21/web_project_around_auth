@@ -25,18 +25,16 @@ export default function Popup(props) {
   };
 
   return (
-    <div className=" popup " onClick={handleOverlayClick}>
-      <div className={` ${!title ? "card-popup__overlay" : "popup__overlay"}`}>
+    <div className="popup popup_opened" onClick={handleOverlayClick}>
+      <div className="popup__container">
         {/* <!-- Botón de cierre --> */}
         <button
-          className={
-            !title ? "card-popup__button-close" : "popup__button-close"
-          }
+          className="popup__button-close"
           aria-label="Cerrar modal"
           type="button"
           onClick={onClose}
         ></button>
-        <h3 className="popup__title">{title}</h3>
+        {title && <h3 className="popup__title">{title}</h3>}
         {children}
       </div>
     </div>

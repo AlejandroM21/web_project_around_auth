@@ -13,8 +13,8 @@ export default function InfoTooltip({ isOpen, isSuccess, message, onClose }) {
   // y onClose para cerrar el modal cuando se haga clic en el botón de cierre
 
   return (
-    <Popup title="" onClose={onClose}>
-      <div className="infotooltip__content popup__overlay">
+    <Popup isOpen={isOpen} title="" onClose={onClose}>
+      <div className="infotooltip__content">
         <img
           src={isSuccess ? successIcon : errorIcon} // selecciona el icono según isSuccess
           alt={isSuccess ? "Éxito" : "Error"}
