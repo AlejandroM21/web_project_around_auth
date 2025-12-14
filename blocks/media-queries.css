@@ -1,0 +1,95 @@
+@media (max-width: 736px) {
+  .profile__info {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .profile__button-add {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+/* Ventana 576px */
+@media (max-width: 576px) {
+  .profile {
+    display: block;
+  }
+
+  .profile__avatar {
+    margin: 40px auto 0;
+  }
+  .profile__info {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .profile__info-name {
+    gap: 10px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+  }
+
+  .popup__button-close {
+    top: -54px;
+    right: -7px;
+    cursor: pointer;
+  }
+}
+
+/* Ventana 405px */
+@media (max-width: 405px) {
+  .main__page {
+    margin: 0 auto 50px;
+  }
+
+  .header {
+    margin-top: 28px;
+    padding-left: 27px;
+  }
+  .hearder__image {
+    margin-bottom: 32px;
+    width: 126px;
+    height: 24px;
+  }
+
+  .profile__name {
+    font-size: 22px;
+  }
+  .profile__about-me {
+    font-size: 14px;
+    margin-bottom: 36px;
+    max-width: 200px;
+  }
+
+  .profile__button-edit {
+    width: 18px;
+    height: 18px;
+    margin-bottom: 10px;
+  }
+
+  .profile__button-add {
+    margin: 0;
+  }
+
+  .elements {
+    margin-top: 36px;
+  }
+
+  .popup__button-close {
+    top: -54px;
+    right: -7px;
+    cursor: pointer;
+  }
+
+  .card-popup__image {
+    max-width: 240px;
+  }
+
+  .footer {
+    padding-bottom: 36px;
+  }
+
+  .footer__copyright {
+    font-size: 14px;
+  }
+}

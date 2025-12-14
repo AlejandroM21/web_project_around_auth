@@ -1,0 +1,88 @@
+.elements {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  justify-items: center;
+  text-align: center;
+  margin-top: 50px;
+  gap: 1.25rem 1.06rem;
+  padding: 0;
+}
+
+.elements__card {
+  border: 1.5px solid #000000;
+  background: #ffffff;
+  width: 282px;
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 31px;
+  overflow: hidden;
+  position: relative;
+}
+
+.elements__card-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  padding-bottom: 25px;
+}
+
+.elements__card-info {
+  display: flex;
+  text-align: start;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 246px;
+}
+
+.elements__card-title {
+  color: #000000;
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 100%;
+  width: 246px;
+  box-sizing: border-box;
+  margin: 0;
+
+  flex: 1;
+  align-self: stretch;
+}
+
+.elements__card-favorite {
+  margin-left: 5px;
+  background-color: transparent;
+  border: none;
+  width: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  background-image: url(../public/logo_favorite.svg);
+}
+
+.elements__card-favorite:hover {
+  opacity: 0.5;
+}
+
+.elements__card-favorite_active {
+  background-image: url(../public/logo_favorite_active.svg);
+  opacity: 1;
+}
+
+.elements__trash {
+  background-image: url(../public/trash.svg);
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  cursor: pointer;
+  width: 18px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+}
+.elements__trash:hover {
+  opacity: 0.6;
+}
