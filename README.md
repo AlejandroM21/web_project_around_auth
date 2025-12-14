@@ -1,4 +1,4 @@
-# 🗺️ Alrededor de los EE.UU. (Versión React)
+# 🗺️ Alrededor de los EE.UU. (Versión web_project_around_auth)
 
 ## Alrededor de los EE.UU. es una aplicación web interactiva desarrollada con React. Permite a los usuarios registrarse, iniciar sesión, gestionar su perfil, agregar tarjetas con imágenes, interactuar con ellas (dar "me gusta") y eliminarlas dinámicamente. El proyecto está construido sobre una arquitectura de componentes moderna, aprovechando el manejo del estado, hooks y Context API de React.
 
@@ -68,7 +68,7 @@ El proyecto se construyó con una arquitectura modular y escalable utilizando HT
 ## 🚀 Cómo Visualizar el Proyecto
 
 Puedes ver el proyecto en acción aquí:
-👉 [https://github.com/AlejandroM21/web_project_around_react](https://alejandrom21.github.io/web_project_around_react/)
+👉 [https://github.com/AlejandroM21/web_project_around_auth/](https://alejandrom21.github.io/web_project_around_auth/)
 
 ---
 

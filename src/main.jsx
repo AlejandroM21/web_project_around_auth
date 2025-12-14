@@ -5,7 +5,7 @@ import "./index.css";
 import App from "./components/App";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter basename="/web_project_around_react">
+  <BrowserRouter>
     <StrictMode>
       <App />
     </StrictMode>
